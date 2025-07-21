@@ -7,7 +7,7 @@ public class Main {
 
         System.out.println("Enter 2 numbers and operation:");
         String inputNum1 = input.nextLine().toLowerCase();
-        char opera = input.next().charAt(0);
+        char opera = input.nextLine().charAt(0);
         String inputNum2 = input.nextLine().toLowerCase();
         input.close();
 
@@ -28,16 +28,16 @@ public class Main {
 
 
         if (opera == '+') {
-            System.out.println(num1 + num2);
+            System.out.println(num1.add(num2));
 
         } else if (opera == '-') {
-            System.out.println(num1 - num2);
+            System.out.println(num1.subtract(num2));
 
         } else if (opera == '/') {
-            System.out.println(num1 / num2);
+            System.out.println(num1.divide(num2));
 
         } else if (opera == '*') {
-            System.out.println(num1 * num2);
+            System.out.println(num1.multiply(num2));
 
         } else {
             System.out.println("Invalid Input, please try again.");
